@@ -14,5 +14,5 @@ module.exports = intersection;
 
 /**
  * To run the tests open console in current directory and type:
- * mocha ./test/intersection
+ * mocha ./arrays/test/intersection
  */

@@ -14,5 +14,5 @@ module.exports = flatten;
 
 /**
  * To run the tests open console in current directory and type:
- * mocha ./test/flatten
+ * mocha ./arrays/test/flatten
  */

@@ -8,6 +8,52 @@ const intersection = require('../arrays/intersection');
 const isEqual = require('../arrays/isEqual');
 const unique = require('../arrays/unique');
 const without = require('../arrays/without');
+const capitalizeString = require('../strings/capitalizeString');
+const clearFromVowels = require('../strings/clearFromVowels');
+const isPalindrome = require('../strings/palindrome');
+const reverse = require('../strings/reverse')
+
+describe('Strings', function() {
+  describe('capitalizeString', function() {
+    it('should return a capitalized string', function() {
+      assert.equal(capitalizeString('London is the capital of great britain'), 'London Is The Capital Of Great Britain');
+    });
+  });
+
+  describe('clearFromVowels', function() {
+    it('should return a string without vowels', function() {
+      assert.equal(clearFromVowels('I Love You'), ' Lv ');
+    });
+
+    it('should return a string without vowels', function() {
+      assert.equal(clearFromVowels('It was such a beautiful sunny day. We spend the whole day in our backyard garden.', ), 't ws sch  btfl snn d. W spnd th whl d n r bckrd grdn.');
+    });
+  });
+
+  describe('palindrome', function() {
+    it('should return true if word is palindrom', function() {
+      assert.equal(isPalindrome('madam'), true);
+    });
+
+    it('should return true if word is palindrom', function() {
+      assert.equal(isPalindrome('Radar'), true);
+    });
+
+    it('should return true if word is palindrom', function() {
+      assert.equal(isPalindrome('Radarz'), false);
+    });
+  });
+
+  describe('reverse', function() {
+    it('should return a reversed string', function() {
+      assert.equal(reverse('Parvez'), 'zevraP');
+    });
+
+    it('should return a reversed string', function() {
+      assert.equal(reverse('f &^$ 456  '), '  654 $^& f');
+    });
+  });
+});
 
 describe('Arrays', function() {
   describe('chunk', function() {

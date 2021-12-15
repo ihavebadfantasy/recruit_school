@@ -16,5 +16,5 @@ module.exports = fromPairs;
 
 /**
  * To run the tests open console in current directory and type:
- * mocha ./test/from_pairs
+ * mocha ./arrays/test/from_pairs
 */

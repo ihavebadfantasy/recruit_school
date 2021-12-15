@@ -15,5 +15,5 @@ module.exports = isEqual;
 
 /**
  * To run the tests open console in current directory and type:
- * mocha ./test/isEqual
+ * mocha ./arrays/test/isEqual
  */

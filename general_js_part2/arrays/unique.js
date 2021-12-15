@@ -16,5 +16,5 @@ module.exports = unique;
 
 /**
  * To run the tests open console in current directory and type:
- * mocha ./test/unique
+ * mocha ./arrays/test/unique
  */

@@ -16,5 +16,5 @@ module.exports = compact
 
 /**
  * To run the tests open console in current directory and type:
- * mocha ./test/compact
+ * mocha ./arrays/test/compact
  */

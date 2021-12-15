@@ -8,20 +8,12 @@
  */
 
 const without = (array, ...args) => {
-  let filteredArray = [...array];
-
-  for (let i = 0; i < args.length; i += 1) {
-    filteredArray = filteredArray.filter((el) => el !== args[i]);
-  }
-
-  return filteredArray;
+  throw new Error('Put your solution here');
 };
-
-const data = [1, 2, 3, 1, 2];
 
 module.exports = without;
 
 /**
  * To run the tests open console in current directory and type:
- * mocha ./test/without
+ * mocha ./arrays/test/without
  */

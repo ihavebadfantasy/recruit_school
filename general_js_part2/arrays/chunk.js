@@ -15,5 +15,5 @@ module.exports = chunk;
 
 /**
  * To run the tests open console in current directory and type:
- * mocha ./test/chunk
+ * mocha ./arrays/test/chunk
  */
