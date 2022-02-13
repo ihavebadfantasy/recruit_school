@@ -12,7 +12,16 @@
  */
 
 function customApply(obj, args) {
-  throw new Error('Put your solution here');
+    if (!obj) {
+        return this(...args);
+    }
+    for (const param in obj) {
+        this.prototype[param] = obj[param];
+    }
+    this.prototype.fn = this;
+    let newFn = new this();
+
+    return newFn.fn(args);
 }
 
 module.exports = customApply;
