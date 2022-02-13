@@ -12,7 +12,22 @@
  */
 
 function customBind(obj, ...args) {
-  throw new Error('Put your solution here');
+    if (!obj) {
+        const originalFunction = this;
+
+        return function () {
+            return originalFunction(...args);
+        };
+    }
+    for (const param in obj) {
+        this.prototype[param] = obj[param];
+    }
+    this.prototype.fn = this;
+    let newFn = new this();
+
+    return function () {
+        return newFn.fn(args);
+    };
 }
 
 module.exports = customBind;
