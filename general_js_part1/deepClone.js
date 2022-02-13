@@ -6,7 +6,15 @@
  */
 
 const deepClone = (source) => {
-  throw new Error('Put your solution here');
+  let objectCopy = Array.isArray(source) ? [] : {}
+    if (typeof source != 'object') {
+      return source;
+    }
+    for (const key in source) {
+        const element = source[key];
+        objectCopy[key]=deepClone(element);
+    }
+    return objectCopy;
 }
 
 module.exports = deepClone;
