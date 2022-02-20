@@ -8,7 +8,14 @@
  */
 
 const without = (array, ...args) => {
-  throw new Error('Put your solution here');
+    let result = [];
+    array.forEach((el) => {
+        if (!args.includes((el))) {
+            result.push(el);
+        }
+    })
+
+    return result;
 };
 
 module.exports = without;

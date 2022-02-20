@@ -8,7 +8,8 @@
  */
 
 const isEqual = (firstArray, secondArray) => {
-  throw new Error('Put your solution here');
+
+    return firstArray.toString() === secondArray.toString();
 }
 
 module.exports = isEqual;

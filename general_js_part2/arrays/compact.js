@@ -7,7 +7,8 @@
  */
 
 const compact = (array) => {
-  throw new Error('Put your solution here');
+
+    return array.filter((el) => el);
 }
 
 const data = [0, 1, false, 2, undefined, '', 3, null];

@@ -7,7 +7,14 @@
  */
 
 const unique = (array) => {
-  throw new Error('Put your solution here');
+  let newArr = [];
+  array.forEach((el)=>{
+    if (!newArr.includes(el)){
+      newArr.push(el);
+    }
+  })
+
+  return newArr;
 }
 
 const data = [1, 2, 1, 2, 3];

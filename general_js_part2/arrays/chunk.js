@@ -8,7 +8,7 @@
  */
 
 const chunk = (array, size) => {
-  throw new Error('Put your solution here');
+
 }
 
 module.exports = chunk;
