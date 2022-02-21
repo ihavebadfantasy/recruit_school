@@ -12,7 +12,7 @@ const compact = (array) => {
 }
 
 const data = [0, 1, false, 2, undefined, '', 3, null];
-compact(data)
+
 module.exports = compact
 
 /**
