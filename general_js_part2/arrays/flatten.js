@@ -6,8 +6,20 @@
  * @returns {Array}
  */
 
+// const flatten = (array) => {
+//   return array.flat(Infinity);
+// }
+
+let result = [];
 const flatten = (array) => {
-  throw new Error('Put your solution here');
+  if (!Array.isArray(array)) {
+    result.push(array);
+  }else{
+    for (const el of array) {
+      flatten(el);
+    }
+  }
+  return result;
 }
 
 module.exports = flatten;
