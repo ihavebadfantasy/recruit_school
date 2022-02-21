@@ -9,7 +9,15 @@
  */
 
 const isPalindrome = (str) => {
-  throw new Error('Put your solution here');
+  let arr = Array.from(str);
+
+  while (arr.length >1){
+    if (arr.pop().toString().toLowerCase() !== arr.shift().toString().toLowerCase()){
+      return false;
+    }
+  }
+
+  return true;
 }
 
 module.exports = isPalindrome;
