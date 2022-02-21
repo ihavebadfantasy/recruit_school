@@ -7,7 +7,7 @@
  */
 
 const intersection = (...arrays) => {
-  throw new Error('Put your solution here');
+  ;
 }
 
 module.exports = intersection;

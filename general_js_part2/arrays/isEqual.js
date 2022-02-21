@@ -8,7 +8,17 @@
  */
 
 const isEqual = (firstArray, secondArray) => {
-  throw new Error('Put your solution here');
+  let res = false
+  firstArray.forEach(el1 => {
+    secondArray.forEach(el2 => {
+      if (el1 === el2){
+        res = true;
+      }else {
+        res = false
+      }
+    })
+  })
+  return res
 }
 
 module.exports = isEqual;
