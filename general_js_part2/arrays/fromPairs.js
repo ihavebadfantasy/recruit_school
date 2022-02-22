@@ -7,7 +7,13 @@
  */
 
 const fromPairs = (array) => {
-  throw new Error('Put your solution here');
+  let obj = {};
+
+  array.forEach(([key, value])=>{
+    obj[key] = value;
+  })
+
+  return obj;
 }
 
 const data = [['a', 1], ['b', 2]];

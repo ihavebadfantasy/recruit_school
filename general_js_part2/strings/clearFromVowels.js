@@ -8,7 +8,8 @@
  */
 
 const clearFromVowels = (str) => {
-  throw new Error('Put your solution here');
+
+  return str.replace(/[aeioyu]*/ig, '');
 }
 
 module.exports = clearFromVowels;

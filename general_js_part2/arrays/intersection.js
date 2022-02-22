@@ -7,7 +7,31 @@
  */
 
 const intersection = (...arrays) => {
-  throw new Error('Put your solution here');
+
+    let intersection = [];
+
+    arrays[0].forEach((el) => {
+
+        if (arrays[1].includes(el) && !intersection.includes(el)) {
+            intersection.push(el);
+        }
+    });
+
+    if (arrays.length > 2) {
+        for (let i = 2; i < arrays.length; i++) {
+
+            let newIntersection = [];
+
+            intersection.forEach((value => {
+
+                if (arrays[i].includes(value)) {
+                    newIntersection.push((intersection.slice(intersection.indexOf(value), intersection.indexOf(value) + 1).toString()));
+                }
+            }));
+            intersection = newIntersection;
+        }
+    }
+    return intersection;
 }
 
 module.exports = intersection;

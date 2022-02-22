@@ -6,7 +6,8 @@
  */
 
 const capitalizeString = (str) => {
-  throw new Error('Put your solution here');
+
+  return str.split(' ').map((word) => word[0].toUpperCase() + word.slice(1)).join(' ')
 }
 
 module.exports = capitalizeString;

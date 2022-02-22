@@ -6,7 +6,7 @@
  */
 
 const reverse = (str) => {
-  throw new Error('Put your solution here');
+  return str.split('').reverse().join('');
 }
 
 module.exports = reverse;

@@ -8,7 +8,17 @@
  */
 
 const chunk = (array, size) => {
-  throw new Error('Put your solution here');
+    let arr = [...array];
+    let result = [];
+
+    while (arr.length > size) {
+        let newArr = arr.splice(0, size);
+        result.push(newArr);
+    }
+
+    result.push(arr);
+
+    return result;
 }
 
 module.exports = chunk;
