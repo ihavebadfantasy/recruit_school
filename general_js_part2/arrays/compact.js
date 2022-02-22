@@ -7,7 +7,8 @@
  */
 
 const compact = (array) => {
-  throw new Error('Put your solution here');
+  const res = array.filter(el => typeof el === 'number' && el !== 0)
+  return res;
 }
 
 const data = [0, 1, false, 2, undefined, '', 3, null];

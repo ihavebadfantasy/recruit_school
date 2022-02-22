@@ -7,7 +7,7 @@
  */
 
 const unique = (array) => {
-  throw new Error('Put your solution here');
+ return array.filter((el, index )=> array.indexOf(el) === index)
 }
 
 const data = [1, 2, 1, 2, 3];

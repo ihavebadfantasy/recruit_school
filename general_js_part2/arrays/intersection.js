@@ -7,7 +7,18 @@
  */
 
 const intersection = (...arrays) => {
-  throw new Error('Put your solution here');
+  let res = [];
+   arrays.forEach((el, indx )=> {
+    el.forEach((elem,index) => {
+      if(arrays.every(element => element.includes(elem))){
+        res.push(elem)
+      }
+    })
+    })
+
+  return res.filter((el, index ) => res.indexOf(el) === index)
+
+
 }
 
 module.exports = intersection;

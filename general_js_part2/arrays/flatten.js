@@ -7,7 +7,7 @@
  */
 
 const flatten = (array) => {
-  throw new Error('Put your solution here');
+  return array.flat(Infinity);
 }
 
 module.exports = flatten;

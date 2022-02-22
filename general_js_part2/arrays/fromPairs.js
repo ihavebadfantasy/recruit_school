@@ -7,7 +7,9 @@
  */
 
 const fromPairs = (array) => {
-  throw new Error('Put your solution here');
+  const obj = {}
+  array.forEach(el => obj[el[0]] = el[1])
+  return obj
 }
 
 const data = [['a', 1], ['b', 2]];
@@ -16,5 +18,5 @@ module.exports = fromPairs;
 
 /**
  * To run the tests open console in current directory and type:
- * mocha ./arrays/test/from_pairs
+ * mocha ./arrays/test/fromPairs
 */

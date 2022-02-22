@@ -9,7 +9,13 @@
  */
 
 const isPalindrome = (str) => {
-  throw new Error('Put your solution here');
+  const reversedStr = str.split('').reverse().join('').toLowerCase();
+
+  if(str.toLowerCase() === reversedStr) {
+    return true
+  }else {
+    return false
+  }
 }
 
 module.exports = isPalindrome;

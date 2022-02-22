@@ -6,7 +6,10 @@
  */
 
 const capitalizeString = (str) => {
-  throw new Error('Put your solution here');
+  const strCopy = str.split(' ');
+  const toUpper = strCopy.map(el => el.replace(el[0], el[0].toUpperCase())).join(' ')
+
+  return toUpper
 }
 
 module.exports = capitalizeString;
