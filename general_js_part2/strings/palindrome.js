@@ -12,7 +12,9 @@ const isPalindrome = (str) => {
   let arr = Array.from(str);
 
   while (arr.length >1){
+
     if (arr.pop().toString().toLowerCase() !== arr.shift().toString().toLowerCase()){
+
       return false;
     }
   }

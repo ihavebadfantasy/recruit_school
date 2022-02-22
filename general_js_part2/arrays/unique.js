@@ -8,7 +8,9 @@
 
 const unique = (array) => {
   let newArr = [];
+
   array.forEach((el)=>{
+
     if (!newArr.includes(el)){
       newArr.push(el);
     }

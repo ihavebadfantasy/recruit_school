@@ -8,7 +8,9 @@
  */
 
 const without = (array, ...args) => {
+
     let result = [];
+    
     array.forEach((el) => {
         if (!args.includes((el))) {
             result.push(el);
