@@ -8,7 +8,13 @@
  */
 
 const without = (array, ...args) => {
-  throw new Error('Put your solution here');
+  let res = []
+  array.filter(el => {
+    args.forEach(arg => {if(el !== arg) {
+    res.push(el)
+    }})
+  });
+  return res
 };
 
 module.exports = without;
