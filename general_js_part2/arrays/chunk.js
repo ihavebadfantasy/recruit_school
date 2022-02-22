@@ -8,7 +8,16 @@
  */
 
 const chunk = (array, size) => {
-  throw new Error('Put your solution here');
+  const copy = [...array]
+  const res = []
+ while (copy.length >= size) {
+   let removed = copy.splice(0, size)
+   res.push(removed)
+ }
+ if(copy.length < size) {
+   res.push(copy)
+ }
+  return res
 }
 
 module.exports = chunk;
