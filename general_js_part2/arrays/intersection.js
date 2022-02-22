@@ -7,24 +7,16 @@
  */
 
 const intersection = (...arrays) => {
-  // let res = [];
-  // let elToCompare;
-  // arrays.forEach((el, indx )=> {
-  //   console.log('ELS====>>>',el);
-  //   el.forEach((elem,index) => {
-  //     elToCompare = elem;
-  //     if (el[index] === elToCompare){
-  //     res.push(elToCompare)
-  //     }
-  //   })
-      // console.log('ELemsS====>>>',elem);
-      // console.log('ELTOCOMPARE====>>>',elToCompare);
-      // })
- const flat = arrays.flat(Infinity)
- const filtered = flat.filter((el, index ) => flat.indexOf(el) !== index)
- const res = filtered.filter((el, index ) => filtered.indexOf(el) === index)
-  console.log(res);
-  return res
+  let res = [];
+   arrays.forEach((el, indx )=> {
+    el.forEach((elem,index) => {
+      if(arrays.every(element => element.includes(elem))){
+        res.push(elem)
+      }
+    })
+    })
+
+  return res.filter((el, index ) => res.indexOf(el) === index)
 
 
 }
